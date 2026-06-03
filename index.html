@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Personal Portfolio">
+    <title>My Portfolio</title>
+
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">Portfolio<span class="gradient-text">.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display:flex; align-items:center; gap: 20px;">
+            <button id="theme-btn" class="theme-btn" aria-label="Toggle Theme">
+                <i class='bx bx-sun'></i>
+            </button>
+            <i class='bx bx-menu menu-icon' id="menu-icon"></i>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particle-canvas"></canvas>
+
+        <div class="hero-content">
+            <div class="hero-text reveal">
+                <h3>Hello, I am</h3>
+                <h1><span class="gradient-text">[Harshavardhan Nalabothula]</span></h1>
+                <div class="typewriter-container"><span class="typing-text"></span></div>
+                <p>[Short intro:I'm Harshavardhan, a passionate Front-End Developer currently learning HTML, CSS, and
+                    JavaScript. I enjoy creating responsive and user-friendly websites while continuously improving my
+                    skills in web development.
+                    ]</p>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">Download CV <i class='bx bx-download'></i></a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk <i class='bx bx-message-rounded-dots'></i></a>
+                </div>
+            </div>
+
+            <div class="hero-img reveal">
+                <div class="img-container">
+                    <!-- Placeholder Profile Image -->
+                    <img src="image.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+        <div class="about-content">
+            <div class="glass-card reveal">
+                <h3 style="margin-bottom: 1rem; font-size: 1.8rem;">Discover My Journey</h3>
+                <p>[ I'm Harshavardhan, a passionate beginner web developer. I enjoy creating responsive and
+                    user-friendly websites using HTML, CSS, and JavaScript. I am continuously learning new technologies
+                    and improving my skills through real-world projects.]</p>
+                <p>[Education/Hobbies:I recently completed my B.Tech in Computer Science Engineering from
+                    Eswar College of Engineering. My goal is to build a successful career in web development and
+                    software engineering. In my free time, I enjoy coding, learning new technologies, and working on
+                    personal projects./Coding, learning new technologies, exploring web design trends, listening to
+                    music, and working on personal projects.(sports, gaming, gym, reading, music,)
+                    .]</p>
+            </div>
+            <div class="about-stats reveal">
+                <div class="stat-item glass-card">
+                    <div class="stat-num">1</div>
+                    <div class="stat-text">months Exp.</div>
+                </div>
+                <div class="stat-item glass-card">
+                    <div class="stat-num">2</div>
+                    <div class="stat-text">Projects</div>
+                </div>
+                <div class="stat-item glass-card">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-text">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="section-title reveal">My <span class="gradient-text">Skills</span></h2>
+        <div class="skills-container">
+
+            <div class="skill-category glass-card reveal">
+                <h3><i class='bx bx-code-alt'></i> Technical Skills</h3>
+
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <span>HTML5 & CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <span>JavaScript (ES6+)</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+
+
+                </div>
+            </div>
+            <div class="skill-category glass-card reveal">
+                <h3><i class='bx bx-palette'></i> Design & Tools</h3>
+
+                <div class="skill-box">
+                    <div class="skill-info">
+
+                    </div>
+
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info">
+                        <span>Git & GitHub</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88%"></div>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-info">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title reveal">Recent <span class="gradient-text">Projects</span></h2>
+
+        <div class="project-filter reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="projects-grid">
+
+            <div class="project-card glass-card reveal" data-category="web">
+                <div class="project-img">
+                    <img src="water.jpg" alt="Project 1">
+                    <div class="project-overlay">
+                        <a href="C:\Users\mahes\Downloads\Ground-Water-Level-Predictor-20260602T121257Z-3-001 - Copy"
+                            class="btn btn-primary"><i class='bx bx-link-external'></i></a>
+                        <a href="#" class="btn btn-outline"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3> Ground-Water-level-Predictor</h3>
+                    <p>A application.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card reveal" data-category="design">
+                <div class="project-img">
+                    <img src="form.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <a href="d:\GovernmentSchemes\myenv" class="btn btn-primary"><i
+                                class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>AI DRIVEN CONVERSATION AGENT FOR ENCHANCING GOVERNMENT SCHEMES</h3>
+                    <p></p>
+                    <div class="project-tags">
+                        <span>HTML.CSS</span><span>python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <section id="services" class="services">
+                <h2 class="section-title reveal">My <span class="gradient-text">Services</span></h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card reveal">
+                        <i class='bx bx-code-block service-icon'></i>
+                        <h3>Web Development</h3>
+                        <p>Building responsive, fast, and scalable web applications using modern technologies.</p>
+                    </div>
+                    <div class="service-card glass-card reveal">
+                        <i class='bx bx-mobile-alt service-icon'></i>
+                        <h3>Responsive Design</h3>
+                        <p>Ensuring your website looks beautiful and functions perfectly on all devices.</p>
+                    </div>
+
+                </div>
+            </section>
+            <br>
+            <br>
+            <section id="timeline" class="timeline">
+                <h2 class="section-title reveal">Experience & <span class="gradient-text">Education</span></h2>
+                <div class="timeline-container">
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2022- 2026</span>
+                            <h3>Bachelor of Computer Science</h3>
+                            <h4>Eswar college of Engineering</h4>
+                            <p>Leading the frontend team, architecting scalable UI components, and improving web
+                                performance
+                                metrics.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2020 - 2022</span>
+                            <h3>Board of intremediate</h3>
+                            <h4>morning star juniour college</h4>
+                            <p> Intermediate with a focus on Mathematics, Physics, and Chemistry (MPC) to qualify for
+                                your
+                                B.Tech program</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">2026 - 2020</span>
+                            <h3>Board of Secondary Eductiom</h3>
+                            <h4>A.P model School</h4>
+                            <p>"My school education helped me build a strong foundation in academics and develop
+                                important life skills such as communication, discipline, and teamwork."</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+
+                <div class="contact-container">
+                    <div class="contact-info reveal">
+                        <div class="glass-card" style="height: 100%;">
+                            <div class="contact-item">
+                                <i class='bx bx-map'></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>[Guntur,Andhara Pradesh,India]</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class='bx bx-envelope'></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>[harshavardhannalabothula@gmail.com]</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class='bx bx-phone'></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>[91+ 9542708409]</p>
+                                </div>
+                            </div>
+                            <div class="social-links">
+                                <a href="Harshavardhan@gmail"><i class='bx bxl-linkedin'></i></a>
+                                <a href="Harshavardhan@gmail.com"><i class='bx bxl-github'></i></a>
+                                <a href="Harshavardhan Nalabothula"><i class='bx bxl-twitter'></i></a>
+                                <a href="sunny valmiki"><i class='bx bxl-dribbble'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form reveal">
+                        <div class="glass-card">
+                            <form id="contact-form">
+                                <div class="input-group">
+                                    <input type="text" class="input-field" placeholder="Your Name" required>
+                                    <input type="email" class="input-field" placeholder="Your Email" required>
+                                </div>
+                                <input type="text" class="input-field" placeholder="Subject" required>
+                                <textarea class="input-field" placeholder="Your Message" required></textarea>
+                                <button type="submit" class="btn btn-primary"
+                                    style="width: 100%; justify-content: center;">Send
+                                    Message <i class='bx bx-send'></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <!-- Footer -->
+            <footer>
+                <a href="#home" class="scroll-top"><i class='bx bx-up-arrow-alt'></i></a>
+                <p class="footer-text">&copy; 2026 [Harshavardhan]. All Rights Reserved.</p>
+            </footer>
+            <script src="index.js"></script>
+</body>
+
+</html>
